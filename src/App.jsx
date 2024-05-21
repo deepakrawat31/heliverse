@@ -1,3 +1,4 @@
+import Animation from "./components/Animation";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import IntroSec from "./components/IntroSec";
@@ -8,7 +9,7 @@ import WandSec from "./components/WandSec";
 
 export default function App() {
    return (
-      <main>
+      <main className="relative overflow-hidden isolate">
          <Header />
          <IntroSec />
          <ReviewSec />
@@ -16,6 +17,7 @@ export default function App() {
          <ProductSec />
          <PluginSec />
          <Footer />
+         <Animation />
       </main>
    );
 }
